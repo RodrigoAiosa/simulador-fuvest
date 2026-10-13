@@ -3,6 +3,7 @@ import time
 import json
 from datetime import datetime
 from questoes import PRIMEIRA_FASE, SEGUNDA_FASE
+from esconder_selo import esconder_selo_streamlit
 
 # ─── Configuração da página ───────────────────────────────────────────────────
 st.set_page_config(
@@ -11,6 +12,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+esconder_selo_streamlit()  # oculta os controles do Streamlit Cloud
 
 # ─── CSS Personalizado ────────────────────────────────────────────────────────
 st.markdown("""
